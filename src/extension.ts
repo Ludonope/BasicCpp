@@ -178,13 +178,13 @@ ${name} &${name}::operator=(${name} const &other)
 
 class ${name}
 {
-	public:
-	${name}();
-	${name}(${name} const &other);
-	~${name}();
-
-	${name} &operator=(${name} const &other);
-	private:
+  public:
+  ${name}();
+  ${name}(${name} const &other);
+  ~${name}();
+  
+  ${name} &operator=(${name} const &other);
+private:
 };
 
 #endif // !${headGuard}`);
@@ -294,13 +294,12 @@ ${name} &${name}::operator=(${name} const &other)
 
 class ${name}
 {
-	public:
-	${name}();
-	${name}(${name} const &other);
-	~${name}() = 0;
-
-	${name} &operator=(${name} const &other);
-	private:
+  public:
+  ${name}();
+  ${name}(${name} const &other);
+  ~${name}() = 0;
+  ${name} &operator=(${name} const &other);
+  private:
 };
 
 #endif // !${headGuard}`);
@@ -359,8 +358,8 @@ class ${name}
 
 class ${name}
 {
-	public:
-	~${name}() = 0;
+  public:
+  virtual ~${name}() = 0;
 };
 
 #endif // !${headGuard}`);

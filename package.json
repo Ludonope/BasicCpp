@@ -45,7 +45,21 @@
 					"description": "Extension of the generated C++ Header files"
 				}
 			}
-		}
+		},
+		"keybindings":[
+			{
+				"command": "ctrl+alt+c",
+				"key": "basiccpp.class"
+			},
+			{
+				"command": "ctrl+alt+a",
+				"key": "basiccpp.abstract"
+			},
+			{
+				"command": "ctrl+alt+i",
+				"key": "basiccpp.interface"
+			}
+		]
 		},
 	"scripts": {
 		"vscode:prepublish": "tsc -p ./",
